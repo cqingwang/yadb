@@ -4,3 +4,6 @@
 local.properties
 .DS_Store
 build
+*.dex
+*.jar
+yarn.xml
