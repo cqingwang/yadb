@@ -1,10 +1,10 @@
-package com.ysbing.yadb.wrappers;
+package com.sogou.yarn.wrappers;
 
 import android.os.IInterface;
 import android.util.Size;
 import android.view.Display;
 
-import com.ysbing.yadb.DisplayInfo;
+import com.sogou.yarn.DisplayInfo;
 
 
 public final class DisplayManager {

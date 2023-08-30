@@ -1,4 +1,4 @@
-package com.ysbing.yadb;
+package com.sogou.yarn;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
@@ -8,7 +8,6 @@ import android.graphics.Rect;
 import android.media.Image;
 import android.media.ImageReader;
 import android.os.Build;
-import android.os.Environment;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.SystemClock;
@@ -18,8 +17,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Surface;
 
-import com.ysbing.yadb.wrappers.SurfaceControl;
-import com.ysbing.yadb.wrappers.layout.LayoutShell;
+import com.sogou.yarn.wrappers.SurfaceControl;
+import com.sogou.yarn.wrappers.layout.LayoutShell;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -31,8 +30,8 @@ public class Server {
 
     private static final String FLAG_ENTER = "~ENTER~";
     private static final String FLAG_CLEAR = "~CLEAR~";
-    private static final File LAYOUT_DEFAULT_FILE = new File("/data/local/tmp", "yadb_layout_dump.xml");
-    private static final File SCREENSHOT_DEFAULT_FILE = new File("/data/local/tmp", "yadb_screenshot.png");
+    private static final File LAYOUT_DEFAULT_FILE = new File("/data/local/tmp", "yarn.xml");
+    private static final File SCREENSHOT_DEFAULT_FILE = new File("/data/local/tmp", "yarn.png");
 
     private static final Device device = new Device();
 

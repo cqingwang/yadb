@@ -1,4 +1,4 @@
-package com.ysbing.yadb.wrappers;
+package com.sogou.yarn.wrappers;
 
 import android.graphics.Rect;
 import android.os.Build;

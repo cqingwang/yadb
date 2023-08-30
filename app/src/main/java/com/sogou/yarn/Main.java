@@ -1,4 +1,4 @@
-package com.ysbing.yadb;
+package com.sogou.yarn;
 
 public class Main {
     private static final String ARG_KEY_BOARD = "-keyboard";

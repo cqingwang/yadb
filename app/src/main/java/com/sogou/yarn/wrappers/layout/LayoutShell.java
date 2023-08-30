@@ -1,4 +1,4 @@
-package com.ysbing.yadb.wrappers.layout;
+package com.sogou.yarn.wrappers.layout;
 
 import android.annotation.SuppressLint;
 import android.app.IUiAutomationConnection;
@@ -8,21 +8,16 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.ysbing.yadb.DisplayInfo;
+import com.sogou.yarn.DisplayInfo;
 
 import org.xml.sax.InputSource;
 import java.io.ByteArrayInputStream; 
 import java.io.ByteArrayOutputStream; 
 import javax.xml.transform.Source;
 import javax.xml.transform.sax.SAXSource;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Result;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.sax.SAXTransformerFactory;
-import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 
 import java.io.File;

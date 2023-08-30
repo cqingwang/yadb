@@ -1,4 +1,4 @@
-package com.ysbing.yadb;
+package com.sogou.yarn;
 
 import android.os.SystemClock;
 import android.view.InputDevice;
@@ -6,10 +6,10 @@ import android.view.InputEvent;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 
-import com.ysbing.yadb.wrappers.ClipboardManager;
-import com.ysbing.yadb.wrappers.DisplayManager;
-import com.ysbing.yadb.wrappers.InputManager;
-import com.ysbing.yadb.wrappers.ServiceManager;
+import com.sogou.yarn.wrappers.ClipboardManager;
+import com.sogou.yarn.wrappers.DisplayManager;
+import com.sogou.yarn.wrappers.InputManager;
+import com.sogou.yarn.wrappers.ServiceManager;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

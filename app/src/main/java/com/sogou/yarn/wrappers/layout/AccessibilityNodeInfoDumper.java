@@ -1,4 +1,4 @@
-package com.ysbing.yadb.wrappers.layout;
+package com.sogou.yarn.wrappers.layout;
 
 import android.os.Build;
 import android.os.SystemClock;
@@ -7,7 +7,7 @@ import android.util.Size;
 import android.util.Xml;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.ysbing.yadb.DisplayInfo;
+import com.sogou.yarn.DisplayInfo;
 
 import org.xmlpull.v1.XmlSerializer;
 

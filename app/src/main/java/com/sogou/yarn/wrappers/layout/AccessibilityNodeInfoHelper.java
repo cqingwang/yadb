@@ -1,4 +1,4 @@
-package com.ysbing.yadb.wrappers.layout;
+package com.sogou.yarn.wrappers.layout;
 
 import android.graphics.Rect;
 import android.view.accessibility.AccessibilityNodeInfo;

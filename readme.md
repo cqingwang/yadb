@@ -20,26 +20,26 @@ adb shell input text 你好
 
 于是，开发出来了，具体的使用如下：
 ```
-adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.ysbing.yadb.Main -keyboard 你好，世界
+adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.sogou.yarn.Main -keyboard 你好，世界
 ```
 
 执行完再看下手机编辑框，是不是出现了中文，这个方案不用手动安装apk在手机上，应该是方便了许多
 
 ## 长按屏幕
 ```
-adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.ysbing.yadb.Main -touch 500 500 2000
+adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.sogou.yarn.Main -touch 500 500 2000
 ```
 
 ## 布局元素
 比adb shell uiautomator dump好用，uiautomator有些界面获取不到
 ```
-adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.ysbing.yadb.Main -layout
+adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.sogou.yarn.Main -layout
 ```
 
 ## 截屏
 可以无视Activity的禁止截屏
 ```
-adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.ysbing.yadb.Main -screenshot
+adb push yadb /data/local/tmp & adb shell app_process -Djava.class.path=/data/local/tmp/yadb /data/local/tmp com.sogou.yarn.Main -screenshot
 ```
 
 ## 致谢

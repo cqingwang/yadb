@@ -1,4 +1,4 @@
-package com.ysbing.yadb;
+package com.sogou.yarn;
 
 import android.util.Size;
 
