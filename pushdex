@@ -3,4 +3,8 @@
 adb push ./app/build/outputs/apk/debug/app-debug/classes.dex /data/local/tmp/
 adb shell chmod 777  /data/local/tmp/classes.dex
 
-#adb shell app_process -Djava.class.path=/data/local/tmp/classes.dex /data/local/tmp com.sogou.yarn.Main -layout
+#adb shell app_process -Djava.class.path=/data/local/tmp/classes.dex / com.sogou.yarn.Main -layout
+#adb shell app_process -Djava.class.path=/data/local/tmp/classes.dex / com.sogou.yarn.Main -layout
+
+#adb shell app_process -Djava.class.path=/data/local/tmp/classes.dex  / com.sogou.yarn.Main -screenshot /sdcard/yarn.png
+#adb shell app_process -Djava.class.path=/data/local/tmp/classes.dex  / com.sogou.yarn.Main -layout /sdcard/Download/yarn1.xml

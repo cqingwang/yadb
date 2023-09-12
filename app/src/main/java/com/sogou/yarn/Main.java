@@ -4,6 +4,8 @@ public class Main {
     private static final String ARG_KEY_BOARD = "-keyboard";
     private static final String ARG_TOUCH = "-touch";
     private static final String ARG_LAYOUT = "-layout";
+    private static final String ARG_LAYOUT_LISTEN = "-layout_listen";
+
     private static final String ARG_SCREENSHOT = "-screenshot";
 
     public static void main(String[] args) {
@@ -25,6 +27,13 @@ public class Main {
                             Server.layout(args[1]);
                         } else {
                             Server.layout(null);
+                        }
+                        break;
+                    case ARG_LAYOUT_LISTEN:
+                        if (args.length == 2) {
+                            Server.layoutListen(args[1]);
+                        } else {
+                            Server.layoutListen(null);
                         }
                         break;
                     case ARG_SCREENSHOT:

@@ -18,7 +18,7 @@ import android.view.MotionEvent;
 import android.view.Surface;
 
 import com.sogou.yarn.wrappers.SurfaceControl;
-import com.sogou.yarn.wrappers.layout.LayoutShell;
+import com.sogou.yarn.wrappers.layout.LayoutInspect;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -30,8 +30,8 @@ public class Server {
 
     private static final String FLAG_ENTER = "~ENTER~";
     private static final String FLAG_CLEAR = "~CLEAR~";
-    private static final File LAYOUT_DEFAULT_FILE = new File("/data/local/tmp", "yarn.xml");
-    private static final File SCREENSHOT_DEFAULT_FILE = new File("/data/local/tmp", "yarn.png");
+    private static final File LAYOUT_DEFAULT_FILE = new File("/sdcard/Download", "yarn.xml");
+    private static final File SCREENSHOT_DEFAULT_FILE = new File("/sdcard/Download", "yarn.png");
 
     private static final Device device = new Device();
 
@@ -86,9 +86,21 @@ public class Server {
             return;
         }
         if (path == null) {
-            LayoutShell.get(LAYOUT_DEFAULT_FILE, displayInfo);
+            LayoutInspect.inspect(LAYOUT_DEFAULT_FILE, displayInfo);
         } else {
-            LayoutShell.get(new File(path), displayInfo);
+            LayoutInspect.inspect(new File(path), displayInfo);
+        }
+    }
+
+    public static void layoutListen(String path) throws Exception {
+        DisplayInfo displayInfo = device.getDisplayInfo();
+        if (displayInfo == null) {
+            return;
+        }
+        if (path == null) {
+            LayoutInspect.listen(LAYOUT_DEFAULT_FILE, displayInfo);
+        } else {
+            LayoutInspect.listen(new File(path), displayInfo);
         }
     }
 
