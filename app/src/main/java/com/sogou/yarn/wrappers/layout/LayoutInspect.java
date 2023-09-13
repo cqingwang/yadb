@@ -15,11 +15,10 @@ public class LayoutInspect {
     }
 
     public static void listen(File file, DisplayInfo displayInfo) throws Exception {
-        InspectSpec shell = new InspectSpec();
         assertTask(); //确保只启动一个,使用端口占用的方式占坑
         while (true) {
-            shell.inspect(file, displayInfo);
-            sleep(50);
+            new InspectSpec().inspect(file, displayInfo);
+            sleep(100);
         }
     }
 

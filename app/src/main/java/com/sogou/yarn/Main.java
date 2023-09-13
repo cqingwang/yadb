@@ -47,7 +47,7 @@ public class Main {
                         break;
                 }
             } else {
-                System.out.println("参数不对");
+                System.out.println("参数不对:[" + String.join(",", args) + "]");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,6 +55,6 @@ public class Main {
     }
 
     private static boolean check(String arg) {
-        return arg.equals(ARG_KEY_BOARD) || arg.equals(ARG_TOUCH) || arg.equals(ARG_LAYOUT) || arg.equals(ARG_SCREENSHOT);
+        return arg.equals(ARG_KEY_BOARD) || arg.equals(ARG_TOUCH) || arg.equals(ARG_LAYOUT) || arg.equals(ARG_SCREENSHOT) || arg.equals(ARG_LAYOUT_LISTEN);
     }
 }

@@ -76,7 +76,7 @@ public class InspectSpec {
     public boolean inspect(File file, DisplayInfo displayInfo) {
         try {
             init_connect();
-            AccessibilityNodeInfo info=null;
+            AccessibilityNodeInfo info = null;
             long startTime = System.currentTimeMillis();
             do {
                 if (System.currentTimeMillis() - startTime >= 5000) {
